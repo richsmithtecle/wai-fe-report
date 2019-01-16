@@ -17,6 +17,24 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
         <style>
+            /*WAI colors from main website:
+            "background orange" = #be7533*/
+            
+            /*Colors from adacom logo project c. 2010*/
+            
+            /*Primary Colors*/
+            /*blue  color="#1e4973"*/
+            /*black color="#000000"*/
+            /*grey	color="#999999"*/
+            
+            /*Secondary Colors*/
+            /*orange/brown 	color="#e5a812"*/
+            /*green			color="#546670"*/
+            
+            /*Fonts*/
+            /*font-family: 'Permanent Marker', cursive;*/
+            /*font-family: 'Roboto', sans-serif;*/
+            /*font-family: 'Open Sans', sans-serif;*/
             /* .gauge {
                 
                 border: 1px solid red;
@@ -71,20 +89,20 @@
                 </div>
             </div>
                 <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 gauge">
+                    <div class="col-xs-0 col-sm-1"></div>
+                    <div class="col-xs-6 col-sm-2 gauge">
                         <div id="agility"></div>
                     </div>
-                    <div class="col-sm-2 gauge">
+                    <div class="col-xs-6 col-sm-2 gauge">
                         <div id="resilience"></div>
                     </div>
-                    <div class="col-sm-2 gauge">
+                    <div class="col-xs-6 col-sm-2 gauge">
                         <div id="initiative"></div>
                     </div>
-                    <div class="col-sm-2 gauge">
+                    <div class="col-xs-6 col-sm-2 gauge">
                         <div id="selfStarting"></div>
                     </div>
-                    <div class="col-sm-2 gauge">
+                    <div class="col-xs-6 col-sm-2 gauge">
                         <div id="engaging"></div>
                     </div>        
                 </div>
@@ -92,12 +110,12 @@
         </div>
 
         <div class="container salesinterest">
-            <div class="row">
+            <div class="row text-center">
                 <h3 class="text-center">Sales Interest</h3>
                 <div class="col-sm-3">
                     <div id="salesInterest" class="gauge"></div>
                 </div>
-                <div class="col-xs-9">
+                <div class="col-sm-9">
                     <p class="lead results">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti iure porro minima incidunt fuga ut perspiciatis eligendi obcaecati, officia quos distinctio temporibus magni sint labore molestiae, maiores nulla laudantium! Voluptatibus ut voluptatem odio velit enim tempore animi soluta, quibusdam, numquam nam natus, quam ipsum corporis perferendis ab amet.</p>
                 </div>
             </div>
@@ -111,16 +129,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="pessimism" class="gauge"></div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="overprep" class="gauge"></div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="critical" class="gauge"></div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="expert" class="gauge"></div>
                 </div>
             </div>
@@ -134,13 +152,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="cognitiveVerbal" class="gauge"></div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="cognitiveMath" class="gauge"></div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-6 col-sm-3">
                     <div id="techSpeak" class="gauge"></div>
                 </div>
             </div>
@@ -223,7 +241,19 @@
                     title: "Agility",
                     shadowOpacity: 1,
                     shadowSize: 7,
-                    shadowVerticalOffset: 10
+                    shadowVerticalOffset: 10,
+                    // gauge colors
+                    // WAI Blue
+                    //levelColors: ["#1e4973", "#1e4973", "#1e4973"]
+
+                    //Random Blue1
+                    // levelColors: ["#346ac1", "#346ac1", "#346ac1"]
+
+                    //WAI Orange / Brown
+                    // levelColors: ["#e5a812", "#e5a812", "#e5a812"]
+
+                    //WAI Website Background Orange
+                    // levelColors: ["#be7533", "#be7533", "#be7533"]
                 });
             var resilience = new JustGage({
                     id: "resilience",
@@ -233,7 +263,8 @@
                     title: "Resilience",
                     shadowOpacity: 1,
                     shadowSize: 7,
-                    shadowVerticalOffset: 10
+                    shadowVerticalOffset: 10,
+                    //levelColors: ["#346ac1", "#346ac1", "#346ac1"]
                 });
             var initiative = new JustGage({
               id: "initiative",
